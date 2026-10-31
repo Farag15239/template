@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Kişisel Web Sitesi hakkında bilgi ve iletişim">
+<title>Hakkında | Kişisel Web Sitesi</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">İÇ</span>
+      <span>Kişisel Web Sitesi<small>BİLİM • TEKNOLOJİ • EĞİTİM</small></span>
+    </a>
+    <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Menüyü aç">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a class="" href="index.html">Ana Sayfa</a>
+      <a class="active" href="hakkinda.html">Hakkında</a>
+      <a class="" href="projeler.html">Projeler</a>
+      <a class="nav-cta" href="hakkinda.html#iletisim">İletişim</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero"><div class="container"><div class="breadcrumb"><a href="index.html">Ana Sayfa</a> / Hakkında</div><h1>Hakkında</h1><p>Profesyonel yaklaşım, uzmanlık alanları ve çalışma geçmişi.</p></div></section>
+<main>
+<section class="section"><div class="container about-grid">
+ <div class="about-photo"><img src="assets/profil-bilim.jpg" alt="Bilimsel çalışma görseli"></div>
+ <div><span class="eyebrow">Profesyonel profil</span><h2>Merak, disiplin ve sürekli gelişim.</h2>
+ <p class="section-lead">Kişisel Web Sitesi; teknoloji, yazılım, eğitim ve bilimsel düşünceyi bir araya getiren çalışmalar yürütmektedir. Yaklaşımı, yalnızca çalışan bir çözüm üretmekten ziyade anlaşılır, sürdürülebilir ve kullanıcıya gerçek değer sağlayan ürünler geliştirmeye dayanır.</p>
+ <p class="section-lead">Bu web sitesi; çalışmaların, projelerin ve teknik ilgi alanlarının düzenli bir dijital portföyde sunulması amacıyla hazırlanmıştır.</p>
+ <div class="timeline">
+  <div class="timeline-item"><strong>Odak</strong><h3>Yazılım ve Web Teknolojileri</h3><p class="section-lead">Modern arayüzler, responsive tasarım ve programlama.</p></div>
+  <div class="timeline-item"><strong>Yaklaşım</strong><h3>Uygulamalı Öğrenme</h3><p class="section-lead">Teoriyi gerçek örnekler ve uygulamalarla destekleme.</p></div>
+  <div class="timeline-item"><strong>Hedef</strong><h3>Sürdürülebilir Dijital Çözümler</h3><p class="section-lead">Kullanıcı ihtiyaçlarını merkeze alan, geliştirilebilir projeler.</p></div>
+ </div>
+ </div>
+</div></section>
+
+<section class="section alt"><div class="container"><div class="section-head"><span class="eyebrow">Sık sorulanlar</span><h2>Merak edilenler</h2></div>
+<div class="faq"><div><p class="section-lead">Profesyonel çalışma alanları ve iş birliği biçimi hakkında hızlı cevaplar.</p></div>
+<div>
+<details open><summary>Hangi alanlarda çalışılıyor?</summary><p>Web geliştirme, programlama, teknik eğitim, dijital içerik ve bilimsel/teknolojik araştırma.</p></details>
+<details><summary>Projelerde hangi yaklaşım kullanılıyor?</summary><p>Önce ihtiyaç belirlenir; ardından araştırma, tasarım, geliştirme, test ve iyileştirme adımları uygulanır.</p></details>
+<details><summary>İş birliği için nasıl iletişime geçebilirim?</summary><p>Aşağıdaki iletişim formunu kullanarak mesaj gönderebilirsiniz.</p></details>
+</div></div></div></section>
+
+<section class="section" id="iletisim"><div class="container form-layout">
+<div><span class="eyebrow" style="color:#2563eb">İletişim</span><h2>Bir fikir paylaşalım.</h2><p class="section-lead">Proje, eğitim, web geliştirme veya iş birliği hakkında mesajınızı gönderin.</p>
+<div class="card"><strong>E-posta</strong><p>iletisim@example.com</p><br><strong>Konum</strong><p>Karabük, Türkiye</p></div></div>
+<form class="form-card" onsubmit="submitForm(event)">
+<div class="field"><label for="ad">Ad Soyad</label><input id="ad" name="ad" required placeholder="Adınız ve soyadınız"></div>
+<div class="field"><label for="email">E-posta</label><input id="email" name="email" type="email" required placeholder="ornek@mail.com"></div>
+<div class="field"><label for="konu">Konu</label><select id="konu"><option>Proje iş birliği</option><option>Eğitim</option><option>Web geliştirme</option><option>Diğer</option></select></div>
+<div class="field"><label for="mesaj">Mesaj</label><textarea id="mesaj" name="mesaj" rows="6" required placeholder="Mesajınızı yazın..."></textarea></div>
+<button class="btn btn-primary" type="submit">Mesajı Gönder →</button><div class="success" id="successMessage"></div>
+</form></div></section>
+</main>
+<footer class="footer">
+ <div class="container">
+  <div class="footer-grid">
+   <div><h3>Kişisel Web Sitesi</h3><p>Bilim, teknoloji, eğitim ve yazılım odaklı profesyonel çalışmaların dijital portföyü.</p></div>
+   <div><h3>Hızlı Bağlantılar</h3><a href="index.html">Ana Sayfa</a><a href="hakkinda.html">Hakkında</a><a href="projeler.html">Projeler</a><a href="hakkinda.html#iletisim">İletişim Formu</a></div>
+   <div><h3>Çalışma Alanları</h3><a href="projeler.html#yazilim">Yazılım</a><a href="projeler.html#egitim">Eğitim</a><a href="projeler.html#arastirma">Araştırma</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Kişisel Web Sitesi. Tüm hakları saklıdır.</span><span>Karabük, Türkiye</span></div>
+ </div>
+</footer>
+<script src="script.js"></script></body></html>
